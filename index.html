@@ -1,1 +1,125 @@
 <h1> hello git pages</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <div class="pcb">
+
+        <div class="t_fsz">
+            <table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_857075">
+                <style>
+                    select,input {font-family:新細明體;line-height:16px;font-size:12pt}
+                </style>
+
+                <script>
+                    var unit0=new Array(3.75,1,31.10348,37.5,1000,37.42515,453.592,500,600);
+                    var unit1=new Array(3.75,1,31.10348,37.5,1000,37.42515,453.592,500,600);
+                    var unit2=new Array("錢","公克 g","盎司 oz","台兩","公斤 kg","港兩","英磅 pound","市斤","台斤");
+                    function cmpw(t1,t2,i1,o1)
+                    {
+                        o1.value=((unit0[parseInt(t1)]*parseFloat(i1)) / unit1[parseInt(t2)])+ " ("+unit2[parseInt(t2)]+")";
+                    }
+                </script>
+
+
+
+
+                <form>
+                    <fieldset>
+                        <legend>Weight Conversion Calculator(重量单位转换器)</legend>
+
+                        <table width="100%" bgcolor="#DDFFFF" border="1">
+                            <tbody><tr><td>
+                                Input Weight(输入重量) :
+                                <input type="text" name="i1" value="1" onchange="cmpw(this.form.t1.value,this.form.t2.value,this.form.i1.value,this.form.o1);">
+
+                                <select name="t1" onchange="cmpw(this.form.t1.value,this.form.t2.value,this.form.i1.value,this.form.o1);">
+                                    <option value="0">Mace(錢)
+                                    </option><option value="1">g(公克)
+                                </option><option value="2">ounce(oz)(盎司)
+                                </option><option value="3">Taiwan Tael(台兩)
+                                </option><option value="4">kilogram(kg)
+                                </option><option value="5">Hong Kong Teal(港兩)
+                                </option><option value="6">pound(英国磅)
+                                </option><option value="7">Jin(市斤)
+                                </option><option value="8">Taiwanese Jin(台斤)
+                                </option></select>
+                                Converts to :(換算成) :
+                                <select name="t2" onchange="cmpw(this.form.t1.value,this.form.t2.value,this.form.i1.value,this.form.o1);">
+                                    <option value="0">Mace(錢)
+                                    </option><option value="1">g(公克)
+                                </option><option value="2">ounce(oz)(盎司)
+                                </option><option value="3">Taiwan Tael(台兩)
+                                </option><option value="4">kilogram(kg)
+                                </option><option value="5">Hong Kong Teal(港兩)
+                                </option><option value="6">pound(英国磅)
+                                </option><option value="7">Jin(市斤)
+                                </option><option value="8">Taiwanese Jin(台斤)
+                                </option></select>
+                            </td>
+                            </tr><tr><td>
+                                Conversion weight(換算重量) : <input type="text" name="o1" size="50" value="" readonly="">
+
+                                <input onclick="cmpw(this.form.t1.value,this.form.t2.value,this.form.i1.value,this.form.o1);" type="button" value="Calculate Weight(計算重量)">
+
+                            </td></tr>
+                            </tbody></table>
+                    </fieldset>
+                </form>
+
+
+                黃金的重量單位分為【兩、錢、分、厘】[tael, mace, cadareen, cash]，採十進位，10錢等於一兩，如果您是要換算成大陸的單位則用克計算，香港兩跟台灣兩的重量是不一樣的。<br>
+                The unit of weight of gold is divided into [tael, mace, cadareen, cash], using the decimal,
+                10 mace is equal to 1 tael, if you want to convert to mainland Chinese units then use grams, the weight of Hong Kong tael
+                and Taiwan tael are not the same.
+                <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#000080" width="100%" id="AutoNumber1" height="51" bgcolor="#808000">
+                    <tbody><tr>
+                        <td align="center" bgcolor="#C0C0C0" bordercolor="#000080">　</td>
+                        <td align="center" bgcolor="#C0C0C0">Mace (台錢)</td>
+                        <td align="center" bgcolor="#C0C0C0">ounce (盎司)</td>
+                        <td align="center" bgcolor="#C0C0C0">gram (公克)</td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#C0C0C0">Mace (台錢)</td>
+                        <td align="center" bgcolor="#FFFFFF">1</td>
+                        <td align="center" bgcolor="#FFFFFF">0.12056</td>
+                        <td align="center" bgcolor="#FFFFFF">3.75</td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#C0C0C0">ounce (盎司)</td>
+                        <td align="center" bgcolor="#FFFFFF">8.2943</td>
+                        <td align="center" bgcolor="#FFFFFF">1</td>
+                        <td align="center" bgcolor="#FFFFFF">31.10348</td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#C0C0C0">gram (公克)</td>
+                        <td align="center" bgcolor="#FFFFFF">0.2666</td>
+                        <td align="center" bgcolor="#FFFFFF">0.032148</td>
+                        <td align="center" bgcolor="#FFFFFF">1</td>
+                    </tr>
+                    </tbody></table>
+
+                <table>
+                    <tbody><tr><td>1kg(公斤) ＝ 1000gram(公克) ＝ 32.150ounce(盎司) ＝ 26.6667Taiwan Tael(台兩) ＝ 26.72HongKong Tael(港兩)</td>
+                    </tr><tr><td>1Taiwan Tael(台兩) ＝ 37.5gram(公克) ＝ 1.20565ounce(盎司) ＝ 10Mace (台錢) ＝ 1.002HongKong Tael(港兩)</td></tr>
+                    <tr><td>1ounce(盎司) ＝ 31.10348gram(公克) ＝ 0.8310HongKong Tael(港兩) ＝ 0.82943Taiwan Tael(台兩)</td></tr>
+                    <tr><td>1HongKong Tael(港兩) ＝ 37.42515gram(公克) ＝ 0.9981Taiwan Tael(台兩) ＝ 1.2033ounce(盎司)</td></tr>
+                    </tbody></table>
+                <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#000080" width="100%" id="AutoNumber1" bgcolor="#C0C0C0">
+                    <tbody><tr><td align="center">1ounce(盎司) = 8.2943Mace(錢)</td>
+                        <td align="center">1/2ounce(盎司) = 0.5ounce(盎司) = 4.1472Mace(錢)</td>
+                        <td align="center">1/4ounce(盎司) =0.25ounce(盎司) = 2.0736Mace(錢)</td></tr>
+                    </tbody></table></td></tr></tbody></table>
+
+
+        </div>
+        <div id="comment_857075" class="cm">
+        </div>
+
+        <div id="post_rate_div_857075"></div>
+    </div>
+</body>
+</html>
